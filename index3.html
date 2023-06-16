@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link href="https://fonts.cdnfonts.com/css/the-biker-brother" rel="stylesheet"> 
+        <link href="https://fonts.cdnfonts.com/css/fatsansround" rel="stylesheet">
+        <link rel="stylesheet" href="footer.css">
+    </head>
+    <title>Pagina Principal de Jehu</title>
+<body>
+    <div style="margin: 24px;">
+        <nav class="navbar navbar-light" style="background-color: khaki;">
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <li class="active">
+                        <a href="index3.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="menu.html">Menu</a>
+                    </li>
+                    <li>
+                        <a href="pedido.html">Pedido</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="apimovies.html">Movies</a>
+                    </li>
+                    <li>
+                        <a href="cuestionario.html">Cuestionario</a>
+                    </li>
+                    <li>
+                        <a href="calculadora.html">Calculadora</a>
+                    </li>
+                    <li>
+                        <a href="calculadorafisica.html">Fisica</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <style>
+        body{ 
+            background-color: black;
+            color: white;                                  
+        }
+        div{
+            position: relative;
+        }
+        video{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            
+        }
+        .titulo{
+            background: black;
+            font-size: 100px;
+            text-align: center;
+            font-weight: 200;
+            mix-blend-mode: multiply;
+            font-family: 'The Biker Brother', sans-serif;
+        }
+    </style>
+
+    <div>
+            <video autoplay muted preload loop>
+                <source src="present.mp4" type="video/mp4">
+            </video>
+            <h1 class="titulo">Bienvenidos a mi pagina</h1>
+            <p class="lead"></div>
+            </div>    
+    </div>
+
+    <footer>
+
+        <div class="container">
+            <div class="footer-content">
+                <div class="fotter-section about">
+
+
+        <h2>Contactame</h2>
+        <p>si estas interesado en contactarme,puedes hacerlo a atraves de cualquiera de las siguientes 
+            redes Sociales:</p>
+            <div class="contact-links">
+            <a href="http://www.facebook.com/miperfil" 
+            target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="http://www.instagram.com/miperfil" 
+            target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="http://www.twitter.com/miperfil" 
+            target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="http://www.discord.com/miperfil" 
+            target="_blank"><i class="fab fa-discord"></i></a>
+            <a href="http://www.pinterest.com/miperfil" 
+            target="_blank"><i class="fab fa-pinterest"></i></a>
+            <a href="http://www.linkedin.com/miperfil" 
+            target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            </div>
+           </div>
+         </div>
+               
+   
+
+    <script>
+        //este siguiente codigo es para que los enlaces se abran en una nueva pestaña
+        const redessociales = document.querySelectorAll('.contact-links');
+        redessociales.forEach(link =>{
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                window.open(link.href, '_blank');
+            });
+        });
+
+    </script>
+
+ </footer>
+
+    <div id="footer"></div>
+   <script>
+    $(function(){
+        $("#footer").load("/TMD/footer.html");
+    });
+   </script>
+
+</body>
+</html>
