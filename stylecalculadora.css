@@ -1,3 +1,7 @@
+.barra{
+    position: absolute;
+    top: 0px;
+}
 *{
     margin: 0;
     padding: 0;
